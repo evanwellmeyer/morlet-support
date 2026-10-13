@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Morlet Support</title>
+  <meta name="description" content="Help and support for Morlet: Sound Spectrum & Wavelets, a free iPhone app for live sound analysis.">
+  <link rel="icon" href="icon.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <header>
+    <img src="icon.png" alt="Morlet app icon">
+    <div>
+      <h1>Morlet</h1>
+      <p class="tagline">Sound Spectrum &amp; Wavelets for iPhone</p>
+    </div>
+  </header>
+
+  <p>Morlet shows the sound around you as a live, scrolling picture of frequency over time. It has two views: a Fourier spectrum and a wavelet scalogram. You can tap anywhere on the graph to read the frequency, note and level, see the loudest pitch like a tuner, and record sessions to export as audio and data. Morlet is free, with no ads, accounts or in-app purchases.</p>
+
+  <h2>Getting started</h2>
+  <div class="card">
+    <h3>Start listening</h3>
+    <p>Tap the microphone button and allow microphone access when asked. The graph begins scrolling from the right, with low frequencies at the bottom and high frequencies at the top.</p>
+    <h3>Choose a view</h3>
+    <p><strong>Spectrum</strong> is steady and easy to compare across the range. <strong>Wavelet</strong> gives low sounds precise pitch and high sounds precise timing.</p>
+    <h3>Pick settings for what you are hearing</h3>
+    <p>Open the sliders button and tap <em>Which settings should I use?</em> for one-tap setups for music, speech, drums, hum and birdsong, plus an explanation of every setting.</p>
+  </div>
+
+  <h2>Questions</h2>
+
+  <h3>How do I read a specific point on the graph?</h3>
+  <p>Tap or drag on the graph. A crosshair shows the frequency, nearest note, level and how long ago that moment was. Use the pause button on the graph to freeze the picture while you look. The microphone and any recording keep running.</p>
+
+  <h3>The loudest-pitch readout shows the wrong note.</h3>
+  <p>The readout shows the strongest frequency, which is sometimes a harmonic rather than the note being played, or low background rumble. Raise the <em>Lowest</em> frequency in settings to ignore rumble. For precise tuning, use a frequency detail of 4,096 or 8,192.</p>
+
+  <h3>The graph is too dark or too bright.</h3>
+  <p>Adjust <em>Brightness</em> and <em>Contrast</em> in the Display section of settings. They change only the picture, not the analysis or exports.</p>
+
+  <h3>Where are my recordings?</h3>
+  <p>Tap the list button at the top of the screen. You can share or delete each recording there. Recordings are stored only on your iPhone and are removed if you delete the app.</p>
+
+  <h3>What do the exported files contain?</h3>
+  <ul>
+    <li><code>audio.wav</code>: the recording as uncompressed audio.</li>
+    <li><code>analysis.csv</code>: one row per analysis frame, with a time column, spectrum columns in dBFS, and wavelet columns in dB.</li>
+    <li><code>metadata.json</code>: the settings used, so the data can be interpreted later.</li>
+  </ul>
+
+  <h3>Morlet says microphone access is disabled.</h3>
+  <p>Open the Settings app, scroll to Morlet, and turn on Microphone.</p>
+
+  <h3>Why do the very top rows look empty?</h3>
+  <p>Many sounds have little energy at the highest frequencies, and some microphones and headsets cut off early. Lower the <em>Highest</em> frequency in settings to spend the rows on the range you care about.</p>
+
+  <h2>Contact</h2>
+  <p>Found a bug or have a suggestion? <a href="https://github.com/evanwellmeyer/morlet-support/issues">Open an issue on GitHub</a>. It helps to include your iPhone model, iOS version and the settings you were using.</p>
+
+  <nav>
+    <a href="privacy.html">Privacy Policy</a> · Morlet collects no personal data.
+  </nav>
+</main>
+</body>
+</html>
