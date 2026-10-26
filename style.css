@@ -1,20 +1,20 @@
 :root {
-  --background: #f6f8fb;
-  --surface: #ffffff;
-  --text: #121826;
-  --muted: #5a6475;
-  --accent: #0a8fb8;
-  --border: #e1e6ee;
+  --background: #F4EFE4;
+  --surface: #FBF8F1;
+  --text: #1B1A17;
+  --muted: #6B665C;
+  --accent: #C23E14;
+  --border: rgba(27, 26, 23, 0.16);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #060b14;
-    --surface: #0d1522;
-    --text: #e8edf5;
-    --muted: #93a0b4;
-    --accent: #35d0f5;
-    --border: #1c2737;
+    --background: #161513;
+    --surface: #1E1C19;
+    --text: #ECE5D6;
+    --muted: #A39D90;
+    --accent: #E8673A;
+    --border: rgba(236, 229, 214, 0.16);
   }
 }
 
@@ -45,6 +45,11 @@ header img {
   height: 76px;
   border-radius: 18px;
   flex-shrink: 0;
+  border: 1px solid var(--border);
+}
+
+h1, h2, h3 {
+  font-family: "New York", ui-serif, Georgia, "Times New Roman", serif;
 }
 
 h1 {
@@ -79,7 +84,7 @@ ul { padding-left: 22px; }
 .card {
   background: var(--surface);
   border: 1px solid var(--border);
-  border-radius: 14px;
+  border-radius: 6px;
   padding: 4px 20px 16px;
   margin-top: 12px;
 }
