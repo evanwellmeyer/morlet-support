@@ -1,20 +1,20 @@
 :root {
-  --background: #F4EFE4;
-  --surface: #FBF8F1;
-  --text: #1B1A17;
-  --muted: #6B665C;
-  --accent: #C23E14;
-  --border: rgba(27, 26, 23, 0.16);
+  --background: #FFFFFF;
+  --surface: #F6F6F5;
+  --text: #141414;
+  --muted: #66665F;
+  --accent: #8F6710;
+  --border: rgba(20, 20, 20, 0.14);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #161513;
-    --surface: #1E1C19;
-    --text: #ECE5D6;
-    --muted: #A39D90;
-    --accent: #E8673A;
-    --border: rgba(236, 229, 214, 0.16);
+    --background: #0E0E0E;
+    --surface: #161616;
+    --text: #E8E8E6;
+    --muted: #9C9C96;
+    --accent: #DDA63A;
+    --border: rgba(232, 232, 230, 0.14);
   }
 }
 
